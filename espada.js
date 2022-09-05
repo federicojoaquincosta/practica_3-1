@@ -27,13 +27,15 @@ class Espada {
         this.nombre = nuevoNombre;
     }
 
-    indicarVictimas(numVictimas) {
-
-        this.numeroVictimas = numVictimas;
-    }
+   
 
     matar() {
         this.numeroVictimas++;
+    }
+
+    indicarVictimas() {
+
+        return this.nombre + " se ha cobrado " + this.numeroVictimas + " víctima/s";
     }
 }
 
